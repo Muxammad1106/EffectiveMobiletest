@@ -1,0 +1,15 @@
+[Unit]
+Description=Мониторинг процесса test
+Documentation=https://github.com/yourproject/monitoring
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/monitor.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
+

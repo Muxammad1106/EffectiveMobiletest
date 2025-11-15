@@ -1,0 +1,13 @@
+[Unit]
+Description=Таймер для мониторинга процесса test (каждую минуту)
+Documentation=https://github.com/yourproject/monitoring
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
+
+
